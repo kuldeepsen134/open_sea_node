@@ -1,0 +1,23 @@
+<div>
+    <div style="font-family: Helvetica,Arial,sans-serif;min-width:1000px;overflow:auto;line-height:2">
+       <div style="margin:50px;padding:20px ">
+          <p style="font-size:20px">Hello <%=locals.name%>,</p>
+          <p style="text-align:center;" >
+             We're sending you this email because you requested a password reset. Click on this link to create a new password:
+          </p>
+          <div>
+             <center><a href="https://openseaapp.netlify.app/auth/reset-password?token=<%= locals.token %>"
+                style="background:#20e277;text-decoration:none !important; font-weight:500; margin-top:35px; color:#fff;text-transform:uppercase; font-size:14px;padding:10px 24px;display:inline-block;border-radius:50px;margin-bottom: 25px;text-align:center;">Reset
+                Password</a>
+             </center>
+          </div>
+          <p style="text-align:center;" >
+             Note: This link will active 30 minutes.
+          </p>
+          <p style="text-align:center;" >
+             If you didn't request a password reset, you can ignore this email. Your password will not be changed.
+          </p>
+          <h2 style="text-align:center; font-weight: bold;" >Oceansea</h2>
+       </div>
+    </div>
+ </div>
